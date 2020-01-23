@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   end
 
   def update
-    task = TAsk.find(params[:id])
+    task = Task.find(params[:id])
     task.update_attributes(task_params)
     render json: task
   end
